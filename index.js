@@ -15,6 +15,8 @@ function display(id){
   document.getElementById('history-section').classList.add('hidden');
   document.getElementById(id).classList.remove('hidden');
   document.getElementById(id).classList.add('block');
+  console.log(window.addEventListener('resize',(e)=>{
+  }));
 }
 
 for (let i = 0; i < love.length; i++) {
@@ -34,7 +36,7 @@ for (let i = 0; i < call.length; i++) {
     alert(`Calling ${service[i].innerText} ${helpline[i].innerText}...`);
     const lastCall = document.createElement("div");
     lastCall.innerHTML = `
-        <div class="bg-gray-50 flex justify-between items-center p-3 inter-font text-sm rounded-lg gap-1 mt-2 ">
+        <div class="bg-gray-50 flex justify-between items-center p-3 inter-font text-sm rounded-lg gap-1 mt-3 ">
             <div>
                 <h1 class="mb-[2px] font-semibold">${service[i].innerText}</h1>
                 <p class="text-gray-600">${helpline[i].innerText}</p>
