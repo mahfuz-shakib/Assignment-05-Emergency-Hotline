@@ -21,7 +21,9 @@
     <style></style>
   </head>
   <body>
+    <!-- header section -->
     <header>
+      <!-- navigation part -->
       <nav class="max-w-[1450px] mx-auto flex justify-between items-center px-2 sm:px-8 my-3">
         <div class="flex justify-start items-center gap-1 sm:gap-1.5">
           <img src="./assets/logo.png" alt="logo" class="size-9 sm:size-13" />
@@ -47,10 +49,13 @@
           <div
             class="flex flex-col sm:flex-row justify-center items-center sm:gap-2 bg-[#00A63E] text-white rounded-xl sm:rounded-[50px] px-4 sm:px-4 py-1 sm:py-2.5"
           >
-            <span id="copy-count">0</span><p class="text-sm">Copy</p>
+            <span id="copy-count">0</span>
+            <p class="text-sm">Copy</p>
           </div>
         </div>
       </nav>
+
+      <!-- hero section -->
       <div
         class="hero-section w-full mx-auto bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] text-center py-3 hind-madurai text-white"
       >
@@ -62,9 +67,12 @@
         </p>
       </div>
     </header>
+
+    <!-- main section -->
     <main class="bg-[#41ff6b1a] min-h-[100vh]">
+      <!-- toggle buttons for small/ mobile device -->
       <div class="max-w-[1450px] grid grid-cols-2 gap-4 mx-auto px-4 pt-6 sm:hidden">
-        <button id="see-hotlines-btn" class="btn  rounded-lg hover:border-2 font-bold">
+        <button id="see-hotlines-btn" class="btn rounded-lg hover:border-2 font-bold">
           <i class="fa-solid fa-phone text-red-700"></i>Hotlines
         </button>
         <button id="see-call-history-btn" class="btn bg-lime-100 rounded-lg hover:border-2 font-bold">
@@ -72,10 +80,12 @@
         </button>
       </div>
       <div class="max-w-[1450px] mx-auto grid sm:grid-cols-12 px-4 sm:px-8 py-6 sm:py-8">
+        <!-- card section -->
         <div
           id="card-section"
           class="sm:col-span-6 lg:col-span-8 xl:col-span-9 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-5 sm:mr-5"
         >
+          <!-- Emergency -->
           <div class="emergency-card bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -100,6 +110,7 @@
               </button>
             </div>
           </div>
+          <!-- Police -->
           <div class="police bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#DFEFFF] p-4 rounded-2xl">
@@ -124,6 +135,7 @@
               </button>
             </div>
           </div>
+          <!-- Fire-service -->
           <div class="fire-service bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -148,6 +160,7 @@
               </button>
             </div>
           </div>
+          <!-- Ambulance -->
           <div class="ambulance bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -172,6 +185,7 @@
               </button>
             </div>
           </div>
+          <!-- Women-Child -->
           <div class="women-child bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -196,6 +210,7 @@
               </button>
             </div>
           </div>
+          <!-- Anti-Corruption -->
           <div class="corruption bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -220,6 +235,7 @@
               </button>
             </div>
           </div>
+          <!-- Electrici-Outage -->
           <div class="electricity bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -244,6 +260,7 @@
               </button>
             </div>
           </div>
+          <!-- Brac -->
           <div class="brac bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -268,6 +285,7 @@
               </button>
             </div>
           </div>
+          <!-- Railway -->
           <div class="railway bg-white p-8 rounded-xl hind-madurai shadow">
             <div class="flex justify-between items-center">
               <div class="bg-[#FFE3E2] p-4 rounded-2xl">
@@ -293,6 +311,8 @@
             </div>
           </div>
         </div>
+
+        <!-- call history section-->
         <div
           id="history-section"
           class="min-h-[100vh] sm:col-span-6 lg:col-span-4 xl:col-span-3 bg-white py-6 px-5 sm:mt-0 rounded-xl hind-madurai shadow hidden sm:block"
