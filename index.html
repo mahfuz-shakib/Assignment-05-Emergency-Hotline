@@ -23,8 +23,8 @@
   <body>
     <header>
       <nav class="max-w-[1450px] mx-auto flex justify-between items-center px-2 sm:px-8 my-3">
-        <div class="flex justify-start items-center gap-1 sm:gap-2">
-          <img src="./assets/logo.png" alt="logo" class="size-8 sm:size-12" />
+        <div class="flex justify-start items-center gap-1 sm:gap-1.5">
+          <img src="./assets/logo.png" alt="logo" class="size-9 sm:size-13" />
           <div class="text-[#006747] hind-madurai text-sm sm:text-[22px]">
             <h1 class="font-bold">Emergency</h1>
             <h1 class="font-bold sm:-mt-1">Service</h1>
@@ -32,22 +32,22 @@
           <!-- <h1 class="text-[#006747] font-bold sm:font-extrabold text-base sm:text-xl">Emergency<br />Service</h1> -->
         </div>
         <div
-          class="grid grid-cols-3 justify-end items-center gap-1.5 sm:gap-3 font-bold text-xs sm:text-base inter-font"
+          class="grid grid-cols-3 justify-end items-center gap-1.5 sm:gap-3 font-bold text-sm sm:text-base inter-font"
         >
           <div
-            class="flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-2 bg-[#41ff6b1a] rounded-2xl sm:rounded-[50px] px-4 sm:px-4 py-1 sm:py-2.5"
+            class="flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-2 bg-[#41ff6b1a] rounded-xl sm:rounded-[50px] px-4 sm:px-4 py-1 sm:py-2.5"
           >
             <span id="heart-count">0</span><img src="./assets/heart.png" alt="" class="size-5 sm:size-[30px]" />
           </div>
           <div
-            class="flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-2 bg-[#41ff6b1a] rounded-2xl sm:rounded-[50px] px-4 sm:px-4 py-1 sm:py-2.5"
+            class="flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-2 bg-[#41ff6b1a] rounded-xl sm:rounded-[50px] px-4 sm:px-4 py-1 sm:py-2.5"
           >
             <span id="coin-count">100</span><img src="./assets/coin.png" alt="" class="size-5 sm:size-[30px]" />
           </div>
           <div
-            class="flex flex-col sm:flex-row justify-center items-center gap-1.5 sm:gap-2 bg-[#00A63E] text-white rounded-2xl sm:rounded-[50px] px-4 sm:px-4 py-1 sm:py-2.5"
+            class="flex flex-col sm:flex-row justify-center items-center sm:gap-2 bg-[#00A63E] text-white rounded-xl sm:rounded-[50px] px-4 sm:px-4 py-1 sm:py-2.5"
           >
-            <span id="copy-count">0</span>Copy
+            <span id="copy-count">0</span><p class="text-sm">Copy</p>
           </div>
         </div>
       </nav>
@@ -64,10 +64,10 @@
     </header>
     <main class="bg-[#41ff6b1a] min-h-[100vh]">
       <div class="max-w-[1450px] grid grid-cols-2 gap-4 mx-auto px-4 pt-6 sm:hidden">
-        <button id="see-hotlines-btn" class="btn bg-lime-100 rounded-lg hover:border-2 font-bold">
+        <button id="see-hotlines-btn" class="btn  rounded-lg hover:border-2 font-bold">
           <i class="fa-solid fa-phone text-red-700"></i>Hotlines
         </button>
-        <button id="see-call-history-btn" class="btn  font-bold">
+        <button id="see-call-history-btn" class="btn bg-lime-100 rounded-lg hover:border-2 font-bold">
           <i class="fa-regular fa-clock text-purple-800"></i>Call History
         </button>
       </div>
@@ -84,8 +84,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">জাতীয় জরুরি সেবা</h1>
-              <h1 class="font-semibold text-lg text-gray-500">National Emergency Service</h1>
+              <h1 class="service-title font-bold text-xl mb-1">জাতীয় জরুরি সেবা</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">National Emergency Service</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">999</h1>
@@ -108,8 +108,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">পুলিশ</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Police</h1>
+              <h1 class="service-title font-bold text-xl mb-1">পুলিশ</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Police</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">999</h1>
@@ -132,8 +132,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">ফায়ার সার্ভিস</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Fire Service</h1>
+              <h1 class="service-title font-bold text-xl mb-1">ফায়ার সার্ভিস</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Fire Service</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">999</h1>
@@ -156,8 +156,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">অ্যাম্বুলেন্স</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Ambulance</h1>
+              <h1 class="service-title font-bold text-xl mb-1">অ্যাম্বুলেন্স</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Ambulance</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">1994-999999</h1>
@@ -180,8 +180,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">নারী ও শিশু সহায়তা</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Women & Child Helpline</h1>
+              <h1 class="service-title font-bold text-xl mb-1">নারী ও শিশু সহায়তা</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Women & Child Helpline</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">109</h1>
@@ -204,8 +204,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">দুদক</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Anti-Corruption</h1>
+              <h1 class="service-title font-bold text-xl mb-1">দুদক</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Anti-Corruption</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">106</h1>
@@ -228,8 +228,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">বিদ্যুৎ বিভ্রাট</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Electricity Outage</h1>
+              <h1 class="service-title font-bold text-xl mb-1">বিদ্যুৎ বিভ্রাট</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Electricity Outage</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">16216</h1>
@@ -252,8 +252,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">ব্র্যাক</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Brac</h1>
+              <h1 class="service-title font-bold text-xl mb-1">ব্র্যাক</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Brac</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">16445</h1>
@@ -276,8 +276,8 @@
               <i class="heart-icon fa-regular fa-heart text-3xl text-gray-500 hover:text-gray-700"></i>
             </div>
             <div class="mt-5">
-              <h1 class="service font-bold text-xl mb-1">বাংলাদেশ রেলওয়ে</h1>
-              <h1 class="font-semibold text-lg text-gray-500">Bangladesh Railway</h1>
+              <h1 class="service-title font-bold text-xl mb-1">বাংলাদেশ রেলওয়ে</h1>
+              <h1 class="service font-semibold text-lg text-gray-500">Bangladesh Railway</h1>
             </div>
             <div class="my-4">
               <h1 class="helpline text-3xl font-semibold mb-1">163</h1>
