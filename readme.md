@@ -70,7 +70,7 @@ lets,
  </body>
  ```
 
-**Here, when button is clicked**
+Here, when button is clicked <br>
 Click happened to button <br> 
 Click happened to Parent div <br>
 Click happened to grandParent section <br>
