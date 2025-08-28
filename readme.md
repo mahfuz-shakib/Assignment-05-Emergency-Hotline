@@ -13,16 +13,18 @@ There are some methods to find or select elements of a HTML file from a JavaScri
 2. **getElementsByClassName:** This method is used to find elements as both uniquely and collectively by using class name of elements.
 
 - const list = document.getElementsByClassName('class_name')
+
   This way provide the elements as collectively whose have the same class_name. That means here 'list' is a NodeList of the seleted elements as like as array/list. So we can access the each single element using 0 based index/serial like list[0], list[1] etc.
 - const list = document.getElementsByClassName('class_name')[index_number]
 
-In this way we can directly find the each single element by using index number. 
+In this way we can directly find the each single element by using index number.
+
 3. **querySelector/querySelectorAll:** These are almost same as like as **getElementById** and **getElementsByClassName** respectively. And the main difference is **querySelector** is needed hash operator (#) as prefix to id_name and **querySelectorAll** is needed dot opertor(.) as prefix to class_name. Although **querySelector** finds element uniquely, but class can be used and it provide the first element under that class name. And **querySelectorAll** functionally behaves as same as **getElementsByClassName**.
 
-- - document.querySelector('#id_name')
-- - document.querySelector('.class_name')
-- - document.querySelector('.class_name')
-- - document.querySelector('.class_name')[index_number]
+ - document.querySelector('#id_name')
+ - document.querySelector('.class_name')
+ - document.querySelector('.class_name')
+ - document.querySelector('.class_name')[index_number]
 
 ---
 
@@ -56,11 +58,12 @@ step-4: insert/append the newElement into the container
 **Answer**
 
 Event bubbling is the process in the DOM where an event starts from the target element (the one that triggered the event) and bubbles up through its ancestors until it reaches the root (document).
+
 More simply, lets a 'button' inside a 'div' and the 'div' inside a section, and then when the 'button' is clicked then event triggered as button -> div -> section -> body -> document -> window
 
 lets,
 
-<body>
+```<body>
   <section id="grandParent"> 
   <div id="parent"> <button id="child">Click Me</button> </div> 
   </section>
