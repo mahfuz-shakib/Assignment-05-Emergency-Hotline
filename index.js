@@ -10,20 +10,37 @@ function getValue(id) {
 function setValue(id, value) {
   document.getElementById(id).innerText = value;
 }
-function display(id){
-  document.getElementById('card-section').classList.add('hidden');
-  document.getElementById('history-section').classList.add('hidden');
-  document.getElementById(id).classList.remove('hidden');
-  document.getElementById(id).classList.add('block');
-  console.log(window.addEventListener('resize',(e)=>{
-  }));
+
+// toggle features with two buttons for small/mobile devices (upto 640px)
+function toggle_mode_for_mobile_device(id) {
+  document.getElementById("card-section").classList.add("hidden",);
+  document.getElementById("history-section").classList.add("hidden",);
+  document.getElementById(id).classList.remove("hidden");
+  document.getElementById(id).classList.add("block",);
+
+  // if window-width > 640px, then remove toggle feature and display both card section and history section fully.
+  window.addEventListener("resize", () => {
+    if (window.outerWidth > 640) {
+      document.getElementById("card-section").classList.remove("hidden");
+      document.getElementById("card-section").classList.add("block");
+    }
+  });
 }
 
+function toggle_button_bg(id)
+{
+  document.getElementById("see-hotlines-btn").classList.remove('bg-lime-100');
+  document.getElementById("see-call-history-btn").classList.remove('bg-lime-100');
+  document.getElementById(id).classList.add('bg-lime-100');
+}
+
+//clicking on heart-icon of any cards
 for (let i = 0; i < love.length; i++) {
   love[i].addEventListener("click", () => {
     setValue("heart-count", getValue("heart-count") + 1);
   });
 }
+
 for (let i = 0; i < call.length; i++) {
   call[i].addEventListener("click", () => {
     const currentCoin = getValue("coin-count");
@@ -47,23 +64,28 @@ for (let i = 0; i < call.length; i++) {
     const container = document.getElementById("history-container");
     container.insertBefore(lastCall, container.firstChild);
   });
-  
 }
-document.getElementById("clear-btn").addEventListener("click", () => {
-    document.getElementById("history-container").innerText = "";
-  });
 
-  for (let i = 0; i < copy.length; i++) {
-  copy[i].addEventListener("click", ()=> {
-    setValue('copy-count',getValue('copy-count')+1);
-    helpline[i].addEventListener('copy',()=>{
+document.getElementById("clear-btn").addEventListener("click", () => {
+  document.getElementById("history-container").innerText = "";
+});
+
+for (let i = 0; i < copy.length; i++) {
+  copy[i].addEventListener("click", () => {
+    setValue("copy-count", getValue("copy-count") + 1);
+    helpline[i].addEventListener("copy", () => {
       alert(`${helpline[i].innerText} number copied`);
     });
   });
 }
-document.getElementById('see-hotlines-btn').addEventListener('click',()=>{ 
-  display('card-section');
-})
-document.getElementById('see-call-history-btn').addEventListener('click',()=>{ 
-  display('history-section');
-})
+
+
+// toggle features with two buttons for small/mobile devices (upto 640px)
+document.getElementById("see-hotlines-btn").addEventListener("click", () => {
+  toggle_mode_for_mobile_device("card-section");
+  toggle_button_bg("see-hotlines-btn")
+});
+document.getElementById("see-call-history-btn").addEventListener("click", () => {
+  toggle_mode_for_mobile_device("history-section");
+  toggle_button_bg("see-call-history-btn")
+});
