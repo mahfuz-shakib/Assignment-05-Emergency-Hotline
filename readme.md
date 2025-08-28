@@ -1,4 +1,4 @@
-## 6. Qustion and Answer
+#  Question and Answer
 
 ## 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
@@ -67,7 +67,8 @@ lets,
       console.log("Click happened to button")
     });
   </script>
- </body>```
+ </body>
+ ```
 
 **Here, when button is clicked**
 Click happened to button <br> 
