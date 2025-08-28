@@ -51,8 +51,7 @@ Event bubbling is the process in the DOM where an event starts from the target e
 More simply, lets a 'button' inside a 'div' and the 'div' inside a section, and then when the 'button' is clicked then event triggered as button -> div -> section -> body -> document -> window
 
 lets,
-```
-<body>
+```<body>
   <section id="grandParent"> 
   <div id="parent"> <button id="child">Click Me</button> </div> 
   </section>
@@ -68,7 +67,7 @@ lets,
       console.log("Click happened to button")
     });
   </script>
- </body>
+ </body>```
 
 **Here, when button is clicked**
 Click happened to button <br> 
