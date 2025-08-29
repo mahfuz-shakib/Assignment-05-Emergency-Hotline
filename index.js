@@ -44,6 +44,7 @@ document.getElementById("see-hotlines-btn").addEventListener("click", () => {
   toggle_mode_for_mobile_device("card-section");
   toggle_button_bg("see-hotlines-btn");
 });
+
 document.getElementById("see-call-history-btn").addEventListener("click", () => {
   toggle_mode_for_mobile_device("history-section");
   toggle_button_bg("see-call-history-btn");
